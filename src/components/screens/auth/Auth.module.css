@@ -1,0 +1,22 @@
+.form {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+
+.m-auto {
+    margin: auto;
+    display: block;
+    border: 1px solid var(--border);
+    width: 24rem;
+    padding: var(--padding);
+}
+
+.form-h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.button-row {
+    display: flex;
+    justify-content: center;
+}

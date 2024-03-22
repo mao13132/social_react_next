@@ -1,0 +1,26 @@
+.field {
+    display: flex;
+    margin-bottom: 30px;
+}
+.field:focus-within {
+    color: red;
+}
+
+.field>input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.field>input::-webkit-input-placeholder {
+    color: #666463;
+}
+
+
+.icon {
+    margin-right: 20px;
+}
+
+.error {
+    color: red;
+}

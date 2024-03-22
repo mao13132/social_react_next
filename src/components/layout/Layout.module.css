@@ -15,3 +15,6 @@
 .layout svg:hover {
     color: var(--white);
 }
+.layout > section {
+    height: 100%;
+}

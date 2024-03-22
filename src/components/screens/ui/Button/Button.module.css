@@ -1,0 +1,14 @@
+.button {
+    background-color: var(--primary);
+    border-radius: 1rem;
+    padding: 10px 30px;
+    color: var(--white);
+    outline: none;
+    border: none;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-property: background-color;
+}
+.button:hover {
+    background-color: #320fa7;
+}
