@@ -5,7 +5,7 @@ import { CurrentUser } from "@/components/screens/chats/CurrentUser";
 
 export default function ChatHome() {
   return <div className='wrapper'>
-    <div>
+    <div className="panel">
 
       <CurrentUser />
       <ChatList />

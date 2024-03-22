@@ -9,6 +9,7 @@ import { MENU } from './sidebar.data';
 import cn from 'classnames';
 import { usePathname } from 'next/navigation';
 
+const isLoggedIn = false;
 
 export function Sidebar() {
 

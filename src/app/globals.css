@@ -14,9 +14,15 @@ body {
 :root {
     --white: #efeff3;
     --padding: 1.25rem;
+    --border: rgba(255, 255, 255, 0.1);
 }
 
 .wrapper {
     display: grid;
     grid-template-columns: .7fr 3fr;
+    height: 100%;
+}
+
+.panel {
+    border-right: 2px solid var(--border);
 }
