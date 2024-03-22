@@ -1,0 +1,17 @@
+.layout {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+}
+.layout a {
+    margin-bottom: 25px;
+}
+.layout svg {
+    color: #7C7275;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    transition-property: color;
+}
+.layout svg:hover {
+    color: var(--white);
+}
