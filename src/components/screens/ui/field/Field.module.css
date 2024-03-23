@@ -1,6 +1,5 @@
 .field {
     display: flex;
-    margin-bottom: 30px;
 }
 .field:focus-within {
     color: red;

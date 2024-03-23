@@ -26,9 +26,10 @@
     outline: none;
     color: var(--with);
     bottom: -10px;
+    width: 100px;
 }
 
-.out, .in:hover {
+.out:hover, .in:hover {
     background-color: #4014cf;
 }
 .avatar, .user img {

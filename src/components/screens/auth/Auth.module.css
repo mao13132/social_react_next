@@ -30,3 +30,12 @@
     display: flex;
     justify-content: center;
 }
+.email, .password {
+    margin-bottom: 30px;
+}
+.button-row {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}

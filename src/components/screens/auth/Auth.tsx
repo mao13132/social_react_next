@@ -50,14 +50,17 @@ export function Auth({ type }: IAuth) {
             <form className={styles['m-auto']} onSubmit={hadleSubmit}>
 
                 <h1 className={styles['form-h1']}>{type}</h1>
-                <Field name="email" placeholder="Enter Email" type="email" Icon={AtSign} required />
-                <Field name="password" placeholder="Enter Password" type="password" Icon={AtSign} required />
+                <Field className={styles['email']} name="email" placeholder="Enter Email" type="email" Icon={AtSign} required />
+                <Field className={styles['password']} name="password" placeholder="Enter Password" type="password" Icon={AtSign} required />
 
 
-                <div className={styles['button-row']}><Button>{type}</Button></div>
+                <div className={styles['button-row']}>
+                    <div className={styles['button-row']}><Button>{type}</Button></div>
+                    <div className={styles['button-row']}><Button type='button' onClick={() => signIn('google', { callbackUrl })}>Зайти через Google</Button></div>
+                </div>
             </form>
 
-            <ButtonGoogle onClick={() => signIn('google', { callbackUrl })}>Зайти через Google</ButtonGoogle>
+
         </div>
     </div>
 };
