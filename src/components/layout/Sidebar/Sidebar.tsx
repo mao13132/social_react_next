@@ -8,10 +8,15 @@ import { API } from '@/utils/api';
 import { MENU } from './sidebar.data';
 import cn from 'classnames';
 import { usePathname } from 'next/navigation';
+import { useSession, signOut } from 'next-auth/react';
 
 const isLoggedIn = false;
 
 export function Sidebar() {
+
+    const session = useSession();
+
+    console.log(session)
 
     const pathName = usePathname();
 
@@ -30,6 +35,18 @@ export function Sidebar() {
 
                 </Link>
             ))}
+
+            {session?.data && <Link href='/profile'>Profile</Link>}
+
+            {session?.data
+                ? <Link href='#' onClick={() => signOut(
+                    {
+                        callbackUrl: '/',
+                    }
+                )}>Sign Out</Link>
+                : <Link href='/login'>Sign In</Link>}
+                {/* : <Link href='/api/auth/signin'>Sign In</Link>} */}
+
 
 
         </div>

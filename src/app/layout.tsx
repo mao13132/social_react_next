@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import LayoutClient from "@/components/layout/Layout";
+import { Providers } from "@/components/Providers/Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,9 +28,11 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={inter.className}>
-        
-        <LayoutClient>{children}</LayoutClient>
-        
+
+        <Providers>{/* Провайдер авторизации */}
+          <LayoutClient>{children}</LayoutClient>
+        </Providers>
+
       </body>
     </html>
   );

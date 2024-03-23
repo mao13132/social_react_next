@@ -16,5 +16,5 @@ export const MENU = [
     {
         url: '/settings',
         icon: Settings,
-    }
+    },
 ];
