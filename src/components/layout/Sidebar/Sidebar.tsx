@@ -9,6 +9,7 @@ import { MENU } from './sidebar.data';
 import cn from 'classnames';
 import { usePathname } from 'next/navigation';
 import { useSession, signOut } from 'next-auth/react';
+import { CurrentUser } from '@/components/screens/chats/CurrentUser/CurrentUser';
 
 const isLoggedIn = false;
 
@@ -23,6 +24,8 @@ export function Sidebar() {
     return <aside className={styles['sidebar']}>
         <Image priority src="/logo.svg" alt='логотип' width={50} height={50} />
 
+        <CurrentUser />
+
         <div className={styles['icons']}>
 
             {MENU.map(item => (
@@ -36,16 +39,8 @@ export function Sidebar() {
                 </Link>
             ))}
 
-            {session?.data && <Link href='/profile'>Profile</Link>}
-
-            {session?.data
-                ? <Link href='#' onClick={() => signOut(
-                    {
-                        callbackUrl: '/',
-                    }
-                )}>Sign Out</Link>
-                : <Link href='/login'>Sign In</Link>}
-                {/* : <Link href='/api/auth/signin'>Sign In</Link>} */}
+            {/* {session?.data && <Link href='/profile'>Profile</Link>} */}
+            {/* : <Link href='/api/auth/signin'>Sign In</Link>} */}
 
 
 

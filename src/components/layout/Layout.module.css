@@ -1,7 +1,7 @@
 .layout {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 20fr;
+    grid-template-columns: 180px 18fr;
 }
 .layout a {
     margin-bottom: 25px;

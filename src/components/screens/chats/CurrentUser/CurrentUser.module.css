@@ -1,0 +1,40 @@
+.user {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 20px 1fr;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+    justify-items: center;
+    position: relative;
+    height: 200px;
+}
+
+.user a {
+    text-decoration: none;
+    position: absolute;
+    
+}
+
+.out, .in {
+    position: absolute;
+    text-align: center;
+    background-color: var(--primary);
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: var(--with);
+    bottom: -10px;
+}
+
+.out, .in:hover {
+    background-color: #4014cf;
+}
+.avatar, .user img {
+    justify-content: center;
+    margin-top: 15px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}

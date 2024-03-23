@@ -29,6 +29,7 @@ export function Auth({ type }: IAuth) {
         const res = await signIn('credentials', {
             email: formData.get('email'),
             password: formData.get('password'),
+            images: 'test',
             redirect: false,
         });
 
